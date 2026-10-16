@@ -222,7 +222,7 @@ pub const TLS13_AES_256_GCM_SHA384: SupportedCipherSuite =
         common: CipherSuiteCommon {
             suite: CipherSuite::TLS13_AES_256_GCM_SHA384,
             hash_provider: hash::SHA384,
-            confidentiality_limit: 1 << 23,
+            confidentiality_limit: 1 << 24,
         },
         hkdf_provider: &rustls::crypto::tls13::HkdfUsingHmac(hmac::SHA384),
         aead_alg: &aead::gcm::Tls13Aes256Gcm,

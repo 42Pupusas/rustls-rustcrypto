@@ -372,7 +372,7 @@ mod tests {
             (
                 &TLS13_AES_256_GCM_SHA384,
                 CipherSuite::TLS13_AES_256_GCM_SHA384,
-                1 << 23,
+                1 << 24,
             ),
             #[cfg(feature = "tls12")]
             (
